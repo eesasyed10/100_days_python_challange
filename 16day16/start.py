@@ -1,0 +1,88 @@
+from turtle import Turtle,Screen
+
+tommy =Turtle()
+my_screen=Screen()
+a=0
+ab=True
+# while ab:
+tommy.shape("turtle")
+# draws N
+tommy.penup()
+tommy.goto(-350, 0)
+tommy.pendown()
+tommy.left(90)
+tommy.forward(50)
+tommy.right(135)
+tommy.forward(70)
+tommy.left(135)
+tommy.forward(48)
+    # a+=1
+    # if a == 10:
+    #     ab=False
+tommy.penup()
+tommy.right(90)
+tommy.forward(10)
+tommy.right(90)
+tommy.pendown()
+tommy.forward(50)
+tommy.left(180)
+tommy.forward(50)
+tommy.right(90)
+
+tommy.penup()
+tommy.forward(30)
+tommy.pendown()
+tommy.forward(50)
+tommy.left(180)
+tommy.forward(50)
+tommy.left(90)
+tommy.forward(50)
+tommy.left(90)
+tommy.forward(50)
+tommy.left(90)
+tommy.forward(25)
+tommy.left(90)
+tommy.forward(25)
+tommy.left(180)
+tommy.forward(30)
+tommy.right(90)
+tommy.forward(25)
+tommy.penup()
+tommy.left(180)
+tommy.forward(50)
+tommy.left(90)
+tommy.forward(15)
+tommy.left(180)
+
+
+
+tommy.penup()
+tommy.forward(30)
+tommy.pendown()
+tommy.forward(50)
+tommy.left(180)
+tommy.forward(50)
+tommy.left(90)
+tommy.forward(50)
+tommy.left(90)
+tommy.forward(50)
+tommy.left(90)
+tommy.forward(25)
+tommy.left(90)
+tommy.forward(25)
+tommy.left(180)
+tommy.forward(30)
+tommy.right(90)
+tommy.forward(25)
+tommy.penup()
+tommy.left(180)
+tommy.forward(50)
+tommy.left(90)
+tommy.forward(15)
+tommy.left(180)
+
+tommy.forward(40)
+
+
+print(tommy,my_screen.canvheight)
+my_screen.exitonclick()
