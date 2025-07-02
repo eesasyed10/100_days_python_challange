@@ -18,4 +18,3 @@ car_name=car(name=car_name,brand=car_brand,max_speed=car_speed)
 on=True
 while on:
     ui=input("enter ")
-car_name.info()
