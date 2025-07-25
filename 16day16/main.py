@@ -6,19 +6,17 @@ is_on=True
 money_machine=MoneyMachine()
 menu=Menu()
 coffeemaker=CoffeeMaker()
-
-
+# print(menu)
+# menu.name()
 while is_on:
-    option=menu.get_items()
-    choice=(f"what would you like: ({option}) :-")
-    if choice=="off":
-        is_on=False
-    elif choice=="report":
+    ui=input(f"enter the coffee you want ({menu.get_items()}):  ")
+    if ui == "report":
         coffeemaker.report()
-        money_machine.report()
-    else:
-        drink=menu.get_items(choice)
-        if coffeemaker.is_resource_sufficient(drink):
-            money_machine.make_payment(drink.cost)
+    elif ui == "latte" or ui == "cappuccino" or ui == "espresso":
+        item = menu.find_drink(ui)
+        if coffeemaker.is_resource_sufficient(item) and money_machine.make_payment(item.cost):
+            coffeemaker.make_coffee(item)
+        # print(a)
+    elif ui == "off":
+        is_on=False
 
-    
